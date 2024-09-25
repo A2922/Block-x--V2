@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unified Blocker Extension</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #3498db, #8e44ad);
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      width: 300px;
+      height: 300px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    #userInfo {
+      margin-bottom: 20px;
+      color: #34495e;
+    }
+
+    #username {
+      font-weight: bold;
+    }
+
+    #loginLinkContainer a {
+      text-decoration: none;
+      color: #2980b9;
+    }
+
+    button {
+      width: 80%;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    #status {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Unified Blocker</h1>
+    <div id="userInfo">
+      Logged in as: <span id="username">Not logged in</span>
+      <span id="loginLinkContainer">(<a href="#" id="loginLink">Login</a>)</span>
+    </div>
+    <button id="toggleDownloadBlockingBtn">Toggle Download Blocking</button>
+    <button id="toggleCopyBlockingBtn">Toggle Copy Blocking</button>
+    <div id="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
