@@ -7,7 +7,8 @@ This project was inspired by a personal experience where a young child unknowing
 
 While we cannot fully eliminate all risks, we aim to significantly mitigate the chances of these types of attacks.
 
-Features (Current & Upcoming)
+Features (Current & Upcoming) --
+
 Site Blocking: Automatically blocks access to known malicious websites, including:
 
 Gambling and betting websites.
@@ -16,7 +17,9 @@ Websites distributing malware or viruses.
 Clipboard Protection: Blocks:
 
 Copy, paste, and cut functions on sensitive websites to prevent accidental sharing of personal data.
+
 Clipboard hijacking, reducing the chance of malicious code being copied or pasted into vulnerable systems.
+
 Download Restrictions: Prevents the download of suspicious files, thus reducing the risk of malware entering the system.
 
 Age-Appropriate Controls: Specifically designed to protect:
@@ -29,6 +32,7 @@ Roadmap
 Phase 1 (Current):
 Disabling copy, cut, and paste.
 Restricting unwanted downloads.
+
 Phase 2 (Planned):
 
 Enhanced threat detection using AI.
